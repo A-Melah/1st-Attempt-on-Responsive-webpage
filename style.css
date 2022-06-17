@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@media screen and (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+  }
+
+  body {
+    background-image: url(bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    place-items: center;
+    height: 100%;
+    margin-top: 20%;
+    padding: 10%;
+    width: 100%;
+  }
+
+  main {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+    gap: 25px;
+  }
+
+  .text-field {
+    grid-area: a;
+    border: none;
+    width: 80vw;
+    height: auto;
+    color: white;
+    text-align: center;
+    margin-bottom: 15%;
+  }
+
+  .bill-btn {
+    grid-area: b;
+    border-radius: 8px;
+    width: 100%;
+    height: 5em;
+    background-color: hsl(248, 32%, 49%);
+    font-family: Poppins;
+    box-shadow: 0 10px #ea7273;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .form {
+    grid-area: c;
+    border: none;
+  }
+
+  #form {
+    background-color: white;
+    padding: 10%;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 10px #ea7273;
+    place-items: center;
+    margin: auto;
+  }
+
+  #btn {
+    width: 100%;
+    height: 4em;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    border: none;
+    font-family: Poppins;
+    color: white;
+    cursor: pointer;
+    border-color: hsl(154, 59%, 51%);
+    box-shadow: 0 2px green;
+  }
+
+  #fname,
+  #lname,
+  #email,
+  #pwd {
+    width: 100%;
+    height: 3em;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 0 3px hsl(246, 25%, 77%);
+  }
+
+  #fname {
+    cursor: text;
+  }
+
+  h1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .field-text {
+    font-family: Poppins;
+    font-size: 16px;
+  }
+
+  #tiny-font {
+    font-size: xx-small;
+    padding: 7px;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+  }
+
+  #red-font {
+    color: red;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+  }
+
+  body {
+    background-image: url(bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    place-items: center;
+    height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  main {
+    display: grid;
+    grid-template-areas:
+      "a b"
+      "a c";
+    gap: 15px;
+  }
+
+  .text-field {
+    grid-area: a;
+    /* padding-right: 10%; */
+    border: none;
+    width: 25vw;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4vw;
+  }
+
+  .bill-btn {
+    grid-area: b;
+    border-radius: 5px;
+    width: 39vw;
+    height: 4em;
+    background-color: hsl(248, 32%, 49%);
+    font-family: Poppins;
+    box-shadow: 0 5px #ea7273;
+    border: none;
+    color: white;
+  }
+
+  .form {
+    grid-area: c;
+    border: none;
+  }
+
+  #form {
+    background-color: white;
+    padding: 10%;
+    border-radius: 5px;
+    width: min-content;
+    height: relative;
+    border: none;
+    box-shadow: 0 5px #ea7273;
+  }
+
+  #btn {
+    width: 31vw;
+    height: 3em;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    border-color: hsl(154, 59%, 51%);
+    font-family: Poppins;
+    color: white;
+  }
+
+  #fname,
+  #lname,
+  #email,
+  #pwd {
+    width: 31vw;
+    height: 3em;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 0 3px hsl(246, 25%, 77%);
+  }
+
+  #fname {
+    cursor: text;
+  }
+
+  h1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: xx-large;
+  }
+
+  .field-text {
+    font-family: Poppins;
+    font-size: small;
+    text-align: left;
+  }
+
+  #tiny-font {
+    text-align: center;
+    width: 100%;
+    color: hsl(246, 25%, 77%);
+    font-size: xx-small;
+  }
+
+  #red-font {
+    color: red;
+  }
+}
